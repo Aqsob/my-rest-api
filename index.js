@@ -72,9 +72,9 @@ app.use(function(req, res, next) {
   next();
 })
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.render('home', {
-    layout: 'home'
+        layout: 'home'
   });
 })
 app.get('/docs', isAuthenticated, async(req, res) => {
